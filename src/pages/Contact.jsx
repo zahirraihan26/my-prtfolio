@@ -1,6 +1,5 @@
 import { useContext, useRef } from "react";
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { motion } from "framer-motion";
 import { NavigateContext } from "../context/NavigateProvider";
@@ -9,28 +8,46 @@ const Contact = () => {
   const { contactRef } = useContext(NavigateContext);
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm("service_48upolr", "template_llgo81r", form.current, {
-        publicKey: "O_KNMjs2MVnNwEPJZ",
-      })
-      .then(
-        () => {
-          e.target.reset();
-          Swal.fire({
-            title: "Message Sent!",
-            text: "Thank you for reaching out.",
-            icon: "success",
-            background: "#111827",
-            color: "#ffffff",
-            confirmButtonColor: "#0ea5e9",
-          });
-        },
-        (error) => {
-          console.error("FAILED...", error.text);
-        }
-      );
+
+    const data = new FormData(form.current);
+    const payload = {
+      name: data.get("name"),
+      email: data.get("email"),
+      message: data.get("message"),
+    };
+
+    try {
+      const response = await fetch("https://formspree.io/f/myzrpodr", { // Formspree endpoint
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (response.ok) {
+        Swal.fire({
+          title: "Message Sent!",
+          text: "Thank you for reaching out.",
+          icon: "success",
+          background: "#111827",
+          color: "#ffffff",
+          confirmButtonColor: "#0ea5e9",
+        });
+        e.target.reset();
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      Swal.fire({
+        title: "Oops!",
+        text: "Something went wrong. Please try again.",
+        icon: "error",
+        background: "#111827",
+        color: "#ffffff",
+        confirmButtonColor: "#0ea5e9",
+      });
+    }
   };
 
   return (
