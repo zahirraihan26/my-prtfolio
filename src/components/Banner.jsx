@@ -14,7 +14,7 @@ const Banner = () => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="max-w-7xl mx-auto px-10 py-20 min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between gap-10 "
+            className="max-w-9xl mx-auto px-10   min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between gap-10 "
         >
             {/* Left */}
             <div className="lg:w-3/5 text-center lg:text-left ">
@@ -71,7 +71,7 @@ const Banner = () => {
                         Hire Me
                     </button>
                     <a
-                        href="https://drive.google.com/file/d/14LJhhMehXXv69ppVHqxN5rQGOFS1wcgu/view?usp=sharing"
+                       href="https://drive.google.com/file/d/1Dn6TPlZ5WAf--9EofmtA2oBO9wHMRN1y/view?usp=sharing"
                         target="_blank"
                         className="flex items-center justify-center px-6 py-2 rounded-lg font-semibold bg-cyan-400 hover:bg-cyan-500 text-black shadow-md transition duration-300"
                     >

@@ -1,21 +1,17 @@
 import { NavLink } from "react-router";
-
-import { FaLocationDot } from "react-icons/fa6";
+import { FaMapMarkerAlt, FaPhoneAlt, FaHome, FaUserAlt, FaCode, FaEnvelope, FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt, FaHome, FaUserAlt, FaCode, FaEnvelope } from "react-icons/fa";
 import { useContext } from "react";
 import { NavigateContext } from "../context/NavigateProvider";
 
 const Footer = () => {
-  const { scrollToSection, homeRef, aboutRef, skillRef, contactRef } =
-    useContext(NavigateContext);
+  const { scrollToSection, homeRef, aboutRef, skillRef, contactRef } = useContext(NavigateContext);
 
   return (
     <footer className="bg-black text-gray-300 pt-10 pb-6">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-        
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
 
-        {/* Quick Access with Icons */}
+        {/* Quick Access */}
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">Quick Access</h3>
           <ul className="flex flex-col gap-2 text-sm">
@@ -23,7 +19,7 @@ const Footer = () => {
               <NavLink
                 to="/"
                 onClick={() => scrollToSection(homeRef)}
-                className="hover:text-lime-400 transition flex items-center gap-2"
+                className="hover:text-cyan-300 transition flex items-center gap-2"
               >
                 <FaHome /> Home
               </NavLink>
@@ -31,7 +27,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => scrollToSection(aboutRef)}
-                className="hover:text-lime-400 transition text-left flex items-center gap-2"
+                className="hover:text-cyan-300 transition text-left flex items-center gap-2"
               >
                 <FaUserAlt /> About
               </button>
@@ -39,7 +35,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => scrollToSection(skillRef)}
-                className="hover:text-lime-400 transition text-left flex items-center gap-2"
+                className="hover:text-cyan-300 transition text-left flex items-center gap-2"
               >
                 <FaCode /> Skills
               </button>
@@ -47,7 +43,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => scrollToSection(contactRef)}
-                className="hover:text-lime-400 transition text-left flex items-center gap-2"
+                className="hover:text-cyan-300 transition text-left flex items-center gap-2"
               >
                 <FaEnvelope /> Contact
               </button>
@@ -60,23 +56,52 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-white mb-4">Contact Info</h3>
           <ul className="flex flex-col gap-3 text-sm">
             <li className="flex items-center gap-2">
-              <FaLocationDot className="text-lime-500" />
+              <FaMapMarkerAlt className="text-cyan-300" />
               Jashore, Khulna, Bangladesh
             </li>
             <li className="flex items-center gap-2">
-              <MdEmail className="text-lime-500" />
-              <a href="mailto:tumithasan1@gmail.com" className="hover:underline">
-               mdzahirraihanbakul@gmail.com
+              <MdEmail className="text-cyan-300" />
+              <a href="mailto:mdzahirraihanbakul@gmail.com" className="hover:underline">
+                mdzahirraihanbakul@gmail.com
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <FaPhoneAlt className="text-lime-500" />
+              <FaPhoneAlt className="text-cyan-300" />
               <a href="tel:+8801615734276" className="hover:underline">
                 +88016 1573 4276
               </a>
             </li>
           </ul>
+          <div className="text-center mt-4">
+            <button
+              onClick={() => scrollToSection(homeRef)}
+              className="text-cyan-300 hover:text-white transition"
+            >
+              Back to Top ↑
+            </button>
+          </div>
         </div>
+
+        {/* Social & Newsletter */}
+        <div>
+          <h3 className="text-lg font-semibold text-white mb-4">Connect & Subscribe</h3>
+          
+          {/* Social Icons */}
+          <div className="flex gap-4 text-cyan-300 text-xl mb-4">
+            <a  href="https://github.com/zahirraihan26" target="_blank" rel="noreferrer">
+              <FaGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/md-zahir-raihan-bakul/" target="_blank" rel="noreferrer">
+              <FaLinkedin />
+            </a>
+            <a href="https://www.facebook.com/md.zahir.raihan.40048/about/?id=100071170629636&sk=about" target="_blank" rel="noreferrer">
+              <FaFacebook />
+            </a>
+          </div>
+
+          
+        </div>
+
       </div>
 
       <hr className="border-gray-700 my-6 mx-4" />

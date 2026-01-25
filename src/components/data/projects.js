@@ -11,7 +11,7 @@ const projects = [
         futurePlans: " better filter system, ",
     },
     {
-        id: 2,
+        id: 3,
         name: "GameHub",
         image: "https://i.ibb.co.com/C5JDtKBr/Screenshot-1.png",
         techStack: ["React, Firebase Authentication, Tailwind CSS, DaisyUI"],
@@ -21,6 +21,34 @@ const projects = [
         challenges: "Implementing state management for tasks efficiently.",
         futurePlans: "Add notifications, drag-and-drop functionality, and analytics dashboard.",
     },
+    {
+  id: 4,
+  name: "eTuitionBd – Tuition Management System",
+  image: "https://i.ibb.co.com/fVRpVKBC/screencapture-lighthearted-croissant-f7f679-netlify-app-2026-01-24-22-57-32.png",
+  techStack: [
+    "React.js",
+    "React Router DOM",
+    "Tailwind CSS",
+    "DaisyUI",
+    "TanStack React Query",
+    "Firebase Authentication",
+    "Axios",
+    "Framer Motion",
+    "Recharts",
+    "Stripe JS",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JWT",
+    "Stripe API"
+  ],
+  description: "eTuitionBd is a full-stack Tuition Management System that connects students, tutors, and admins on a single platform. It simplifies tuition posting, tutor applications, admin approvals, secure payments, and platform monitoring with role-based dashboards.",
+  liveLink: "https://lighthearted-croissant-f7f679.netlify.app/",
+  githubClient: "https://github.com/zahirraihan26/E-Tuition-BD-Clint",
+  githubServer: "https://github.com/zahirraihan26/eTuitionBd-server",
+  challenges: "Implementing role-based authentication with JWT, protecting routes without reload issues, integrating Stripe payments securely, and managing complex dashboards for students, tutors, and admins.",
+  futurePlans: "Add real-time notifications, in-app messaging between students and tutors, advanced analytics dashboard, and AI-based tutor recommendations."
+}
     
 ];
 
