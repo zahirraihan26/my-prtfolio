@@ -146,7 +146,7 @@ const Navbar = () => {
           {navItems}
         </nav>
         <a
-          href="https://drive.google.com/file/d/1P61zXG4Ryuh2Z445UwzTpP0Uljt0SvjY/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Dn6TPlZ5WAf--9EofmtA2oBO9wHMRN1y/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="bg-cyan-400 hover:bg-cyan-500 text-zinc-900 px-4 py-2 rounded-full font-semibold flex justify-center items-center gap-2 w-[90%] mx-auto mt-4 transition shadow-md hover:shadow-cyan-300"
