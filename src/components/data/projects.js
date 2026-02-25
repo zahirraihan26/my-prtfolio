@@ -67,7 +67,7 @@ const projects = [
   "description": "MY-FAST-NEXT-APP is a modern Next.js 14+ web application built with the App Router. It is designed for educational or course management purposes, featuring dynamic routing for courses and management pages. It leverages server components for routing and dynamic page generation to ensure a fast, scalable user experience.",
   "liveLink": "https://ibb.co.com/LXQyHJCV",
   "githubClient": "YOUR_REPO_URL_HERE",
-  "githubServer": "",
+  "githubServer": "https://github.com/zahirraihan26/next-app.git",
   "challenges": "Adapting to the Next.js 14 App Router and server components, securely integrating Firebase Authentication, and optimizing dynamic page generation for routes like /courses/[id].",
   "futurePlans": "Add an advanced admin dashboard for instructors, integrate a payment gateway for premium course enrollment, and implement real-time interactive features for students."
 }
