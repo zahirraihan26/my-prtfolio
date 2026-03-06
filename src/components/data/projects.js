@@ -49,28 +49,7 @@ const projects = [
   challenges: "Implementing role-based authentication with JWT, protecting routes without reload issues, integrating Stripe payments securely, and managing complex dashboards for students, tutors, and admins.",
   futurePlans: "Add real-time notifications, in-app messaging between students and tutors, advanced analytics dashboard, and AI-based tutor recommendations."
 },
-{
-  "id": 5,
-  "name": "MY-FAST-NEXT-APP – Course Management System",
-  "image": "YOUR_IMAGE_LINK_HERE",
-  "techStack": [
-    "Next.js 14+",
-    "React 18",
-    "Node.js",
-    "Firebase",
-    "Firebase Authentication",
-    "CSS",
-    "Tailwind CSS",
-    "JavaScript",
-    "Vercel"
-  ],
-  "description": "MY-FAST-NEXT-APP is a modern Next.js 14+ web application built with the App Router. It is designed for educational or course management purposes, featuring dynamic routing for courses and management pages. It leverages server components for routing and dynamic page generation to ensure a fast, scalable user experience.",
-  "liveLink": "https://ibb.co.com/LXQyHJCV",
-  "githubClient": "YOUR_REPO_URL_HERE",
-  "githubServer": "https://github.com/zahirraihan26/next-app.git",
-  "challenges": "Adapting to the Next.js 14 App Router and server components, securely integrating Firebase Authentication, and optimizing dynamic page generation for routes like /courses/[id].",
-  "futurePlans": "Add an advanced admin dashboard for instructors, integrate a payment gateway for premium course enrollment, and implement real-time interactive features for students."
-}
+
     
 ];
 
