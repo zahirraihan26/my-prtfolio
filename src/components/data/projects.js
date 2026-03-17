@@ -2,10 +2,10 @@ const projects = [
     {
         id: 1,
         name: "MovieMania",
-        image: "https://i.ibb.co.com/5hhPwPvR/screencapture-assignment-10-client-fbd29-firebaseapp-2025-12-06-04-50-07.png",
+        image: "https://i.ibb.co.com/VYghJHHX/Screenshot-2.png",
         techStack: ["React, Node.js, MongoDB, Firebase, Tailwind CSS, daisyUi"],
         description: "A modern movie exploration web application where users can browse, filter, and view detailed information about various movies.",
-        liveLink: "https://assignment-10-client-fbd29.firebaseapp.com/",
+        liveLink: "https://movie1-9ip1bobxy-zaihir-raihans-projects.vercel.app/",
         githubClient: "https://github.com/zahirraihan26/assignment-10-client.git",
         challenges: "Protected route,  CRUD with MongoDB",
         futurePlans: " better filter system, ",
@@ -24,7 +24,7 @@ const projects = [
     {
   id: 4,
   name: "eTuitionBd – Tuition Management System",
-  image: "https://i.ibb.co.com/fVRpVKBC/screencapture-lighthearted-croissant-f7f679-netlify-app-2026-01-24-22-57-32.png",
+  image: "https://i.ibb.co.com/N2RVvxgd/Screenshot-2026-03-17-214549.png",
   techStack: [
     "React.js",
     "React Router DOM",
@@ -43,7 +43,7 @@ const projects = [
     "Stripe API"
   ],
   description: "eTuitionBd is a full-stack Tuition Management System that connects students, tutors, and admins on a single platform. It simplifies tuition posting, tutor applications, admin approvals, secure payments, and platform monitoring with role-based dashboards.",
-  liveLink: "https://lighthearted-croissant-f7f679.netlify.app/",
+  liveLink: "https://whimsical-beijinho-8f5d76.netlify.app/",
   githubClient: "https://github.com/zahirraihan26/E-Tuition-BD-Clint",
   githubServer: "https://github.com/zahirraihan26/eTuitionBd-server",
   challenges: "Implementing role-based authentication with JWT, protecting routes without reload issues, integrating Stripe payments securely, and managing complex dashboards for students, tutors, and admins.",
