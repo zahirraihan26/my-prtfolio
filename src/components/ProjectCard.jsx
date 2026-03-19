@@ -15,12 +15,13 @@ const ProjectCard = ({ project }) => {
           src={project.image}
           alt={project.name}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          onError={(e) => { e.target.src = "/placeholder.png"; }}
         />
 
         {/* Overlay Blur Effect */}
-        <div className="absolute inset-0 bg-opacity-20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-xl" />
+        <div className="absolute inset-0 bg-black/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-xl" />
 
-        {/* View Detail Button */}
+        {/* View Details Button */}
         <motion.div
           initial={{ opacity: 0, y: 30, rotate: -10 }}
           animate={{ opacity: 1, y: 0, rotate: 0 }}
@@ -36,7 +37,7 @@ const ProjectCard = ({ project }) => {
         </motion.div>
       </div>
 
-      {/* Tech Stack */}
+      {/* Tech Stack Badges */}
       <div className="px-4 sm:px-5 py-3 sm:py-4">
         <div className="flex flex-wrap gap-2 mb-3 sm:mb-4 justify-center">
           {project.techStack?.map((tech, idx) => (
