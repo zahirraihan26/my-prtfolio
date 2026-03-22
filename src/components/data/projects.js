@@ -51,7 +51,7 @@ const projects = [
        "Express.js",
   ],
   description: "NextApp is a full-stack web application built with Next.js that demonstrates modern React architecture with server-side rendering and API integration. The platform focuses on fast performance, clean UI design, and scalable backend integration.",
-  liveLink: "https://next-app-yegj-git-main-zaihir-raihans-projects.vercel.app/",
+  liveLink: "https://next-app-sigma-black.vercel.app/",
   githubClient: "https://github.com/zahirraihan26/next-app.git",
   githubServer: "https://github.com/zahirraihan26/next-app-server.git",
   challenges: "Handling Next.js routing structure, integrating backend APIs, and managing authentication with a smooth user experience.",
@@ -74,7 +74,7 @@ const projects = [
     "DaisyUI"
   ],
   description: "MovieMania is a modern movie exploration web application where users can browse, filter, and view detailed information about various movies. It provides a smooth UI for discovering movies and exploring their details.",
-  liveLink: "https://movie1-9ip1bobxy-zaihir-raihans-projects.vercel.app/",
+  liveLink: "https://movie1-pro.vercel.app/",
   githubClient: "https://github.com/zahirraihan26/assignment-10-client.git",
   challenges: "Implementing protected routes with Firebase authentication, managing CRUD operations with MongoDB, and handling dynamic movie filtering.",
   futurePlans: "Add advanced filtering and search system, user reviews and ratings, watchlist feature, and improved UI animations."
@@ -91,6 +91,32 @@ const projects = [
     challenges: "Implementing state management for tasks efficiently.",
     futurePlans: "Add notifications, drag-and-drop functionality, and analytics dashboard.",
   },
+
+  {
+"id": 5,
+"name": "The Dragon News – News Portal",
+"image": "https://i.ibb.co.com/hq2DjqL/Screenshot-8.png",
+"techStack": [
+"React.js",
+"React Router",
+"Weather API",
+"REST API",
+"Axios",
+"news API",
+"Node.js",
+"Express.js",
+"REST API",
+"Tailwind CSS",
+"DaisyUI",
+"Vercel"
+],
+"description": "The Dragon News is a modern news portal where users can browse news by categories, view detailed articles, and navigate through paginated news content. The project uses a custom backend API for fetching news data and provides a fast and responsive UI.",
+"liveLink": "https://the-dragon-news-neon.vercel.app/category/0",
+"githubClient": "https://github.com/zahirraihan26/The-dragon-news-.git",
+"githubServer": "https://github.com/zahirraihan26/dragon-server.git",
+"challenges": "Handling API pagination, implementing category-based news filtering, and solving CORS issues during deployment on Vercel.",
+"futurePlans": "Add user authentication, bookmark system for saving news, comment section, and improved search functionality."
+},
 
 
 ];
